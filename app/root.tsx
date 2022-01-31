@@ -4,7 +4,8 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration
+  Link,
+  ScrollRestoration,
 } from "remix";
 import type { MetaFunction } from "remix";
 
@@ -19,6 +20,8 @@ export default function App() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <Meta />
+        <Link to="/posts">Posts</Link>
+
         <Links />
       </head>
       <body>
